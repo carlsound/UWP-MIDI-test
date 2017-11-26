@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="W10_UWP_CS_MIDI_Test_02.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:W10_UWP_CS_MIDI_Test_02"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <ScrollViewer VerticalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+        <!---->
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!---->
+            <TextBlock Text="MIDI Input Devices:" TextAlignment="Center" Padding="4"></TextBlock>
+            <!---->
+            <ListBox Name="MidiInputDevicesListBox" Padding="4" SelectionChanged="MidiInputDevicesListBoxSelectionChanged"></ListBox>
+            <!---->
+            <TextBlock Text="MIDI Output Devices:" TextAlignment="Center"></TextBlock>
+            <!---->
+            <ListBox Name="MidiOutputDevicesListBox" Padding="4" SelectionChanged="MidiOutputDevicesListBoxSelectionChanged"></ListBox>
+            <!---->
+            <TextBlock Text="Sent MIDI Messages:" TextAlignment="Center"></TextBlock>
+            <!---->
+            <TextBlock Name="MidiMessagesReceivedListView" Padding="4"></TextBlock>
+             <!---->
+            <TextBlock Text="Received MIDI Messages:" TextAlignment="Center"></TextBlock>
+            <!---->
+            <TextBox Name="MidiMessagesSentListView" Padding="4"></TextBox>
+            <!---->
+        </StackPanel>
+        <!---->
+    </ScrollViewer>
+</Page>
